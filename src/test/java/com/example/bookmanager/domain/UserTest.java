@@ -16,6 +16,11 @@ class UserTest {
         User user1 = new User(null, "minho", "haejunkim@metacomedy.com", LocalDateTime.now(), LocalDateTime.now());
         User user2 = new User("minho", "haejunkim@metacomedy.com");
 
+        User user3 = User.builder()
+                .name("minho")
+                .email("haejunkim@metacomedy.net")
+                .build();
+
         System.out.println(user);
     }
 }
