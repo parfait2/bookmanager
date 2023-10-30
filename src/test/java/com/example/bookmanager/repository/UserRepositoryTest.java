@@ -121,5 +121,20 @@ class UserRepositoryTest {
         Example<User> example = Example.of(user, matcher);
 
         userRepository.findAll(example).forEach(System.out::println);
+
+        /**
+         * test 8
+         * */
+//        userRepository.saveAndFlush(new User("new Haejun", "newhaejun@metacomedy.net"));
+//        userRepository.findAll().forEach(System.out::println);
+
+        /**
+         * test 9
+         * count
+         * */
+//        long count = userRepository.count();
+//        System.out.println(count);
+
+
     }
 }
